@@ -1,0 +1,145 @@
+Project: Employee Expense Reimbursement Calculator
+
+NovaServe Technologies currently processes small employee expense claims manually. Employees submit information about their business expenses, and the operations team calculates the reimbursement amount.
+
+The company wants a simple Python program that can perform the initial calculation automatically.
+
+Business problem
+
+An employee may have several business expenses during a work trip:
+
+Food
+Transportation
+Hotel
+Other business expenses
+
+The company has reimbursement rules:
+
+Food
+
+Employees can claim food expenses.
+Maximum reimbursable food amount: ₹1,500 per day.
+
+Transportation
+
+Transportation expenses are fully reimbursable if they are business-related.
+
+Hotel
+
+Maximum reimbursable hotel amount: ₹3,000 per day.
+
+Other expenses
+
+Other legitimate business expenses are reimbursed up to ₹1,000.
+
+The employee may submit expenses above these limits, but the company will reimburse only the allowed amount.
+
+Your assignment
+
+You are an Junior Python Developer in the Operations Technology team.
+
+Build a Python program that accepts an employee's expense information and calculates the final reimbursement.
+
+Your program should collect:
+
+Employee name
+Employee ID
+Number of travel days
+Food expenses
+Transportation expenses
+Hotel expenses
+Other expenses
+
+Then calculate:
+
+Maximum food reimbursement allowed.
+Actual food reimbursement.
+Maximum hotel reimbursement allowed.
+Actual hotel reimbursement.
+Transportation reimbursement.
+Other-expense reimbursement.
+Total amount submitted.
+Total amount approved.
+Amount not reimbursed.
+Business rules
+
+Your program must make decisions based on the company's reimbursement policy.
+
+For example:
+
+If an employee submits ₹2,000 of food expenses for one day, the company should not reimburse ₹2,000.
+
+It should apply the company's ₹1,500 limit.
+
+Similarly, if an employee submits ₹4,000 hotel expenses for one day, only ₹3,000 should be considered reimbursable.
+
+For multiple travel days, the applicable daily limit should be multiplied by the number of days.
+
+Required program behavior
+
+Your program should display an employee reimbursement report similar to:
+
+========================================
+       NOVASERVE EXPENSE REPORT
+========================================
+
+
+Employee Name       : ...
+Employee ID         : ...
+Travel Days         : ...
+
+
+Food Submitted      : ₹...
+Food Approved       : ₹...
+
+
+Transport Submitted : ₹...
+Transport Approved  : ₹...
+
+
+Hotel Submitted     : ₹...
+Hotel Approved      : ₹...
+
+
+Other Submitted     : ₹...
+Other Approved      : ₹...
+
+
+----------------------------------------
+Total Submitted     : ₹...
+Total Approved      : ₹...
+Not Reimbursed      : ₹...
+----------------------------------------
+
+The exact formatting is your decision.
+
+Important requirements
+
+Your program should:
+
+Use variables appropriately.
+Use arithmetic calculations.
+Use at least 2–3 functions.
+Use conditions to apply company policies.
+Use lists where they make sense.
+Handle different employee expense situations.
+Produce a clear final report.
+Test cases
+
+Before considering the project complete, test your program with at least these scenarios:
+
+Test Case 1 — Normal employee
+
+5 travel days with expenses within the company's limits.
+
+Test Case 2 — High expenses
+
+5 travel days where food and hotel expenses significantly exceed the limits.
+
+Test Case 3 — Low expenses
+
+3 travel days where all expenses are below the maximum reimbursement limits.
+
+Test Case 4 — Mixed expenses
+
+7 travel days where some categories are below their limits and others exceed them.
